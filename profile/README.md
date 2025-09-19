@@ -1,12 +1,34 @@
-## Hi there 👋
+<h1 align="center"> 
+🔴 NRT: Navigate, Transact, Retrieve 🔴
+</h1>                                                    
+           
+---
 
-<!--
+<h3 align="center">
+Developers: Nazim, Toufeeq, Ridhaa
+</h3>
 
-**Here are some ideas to get you started:**
+<p align="center">
+<b>redAcademy</b> has a <b>Vending Machine</b> for Software Developer Sprinters to use, offering the perfect snacks for developers to handle bugs effectively.  
+The <b>Admin</b> of the system must first add sprinters so they are able to login and use the NRT vending machine.  
+</p>
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+---
+
+---
+
+## ⚙️ Steps to Run the Program
+
+ **Configure database connection**  
+- Open `App.config`  
+- Update the `{SERVERNAME}` section with your **SQL Server name** from **SSMS**  
+
+```xml
+<connectionStrings>
+  <add name="NRTDb" connectionString="Data Source={SERVERNAME};Initial Catalog=NRTVending;Integrated Security=True;" providerName="System.Data.SqlClient" />
+</connectionStrings>
+```
+⚠️ Requirements
+Visual Studio 2019 or later
+.NET Framework 4.7.2
+SQL Server (Express or Standard)
